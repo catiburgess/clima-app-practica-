@@ -22,4 +22,4 @@ La aplicación calcula dinámicamente:
 - HTML
 - JavaScript (sin API, datos locales)
 
-Repositorio: (aquí pega tu link de GitHub)
+Repositorio: https://github.com/catiburgess/clima-app-practica-.git
