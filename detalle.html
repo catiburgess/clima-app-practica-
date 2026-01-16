@@ -10,11 +10,23 @@
 
 <body>
 <main class="container my-4">
-  <h1 id="titulo-ciudad"></h1>
-  <p>Temperatura: <span id="temp"></span> °C</p>
-  <p>Estado: <span id="estado"></span></p>
 
-  <a href="index.html" class="btn btn-secondary mt-3">Volver</a>
+  <!-- Título del lugar -->
+  <h1 id="titulo-ciudad"></h1>
+
+  <!-- Clima actual -->
+  <p>Temperatura actual: <strong><span id="temp"></span> °C</strong></p>
+  <p>Estado actual: <strong><span id="estado"></span></strong></p>
+
+  <hr>
+
+  <!-- PRONÓSTICO SEMANAL (JS escribe aquí) -->
+  <section id="pronostico"></section>
+
+  <!-- ESTADÍSTICAS (JS escribe aquí) -->
+  <section id="estadisticas" class="mt-4"></section>
+
+  <a href="index.html" class="btn btn-secondary mt-4">Volver</a>
 </main>
 
 <script src="assets/js/main.js"></script>
