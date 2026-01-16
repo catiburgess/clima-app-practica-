@@ -20,11 +20,11 @@ class WeatherApp {
   constructor(api) {
     this.api = api;
     this.lugares = [
-      { id: 1, nombre: "Playa del Viento", lat: -33.0, lon: -71.6 },
-      { id: 2, nombre: "Montaña Azul", lat: -39.8, lon: -73.2 },
-      { id: 3, nombre: "Valle Verde", lat: -35.4, lon: -71.7 },
-      { id: 4, nombre: "Ciudad Central", lat: -33.4, lon: -70.6 },
-      { id: 5, nombre: "Isla Azul", lat: -20.2, lon: -70.1 }
+      { id: 1, nombre: "Santiago", lat: -33.45, lon: -70.66 },
+      { id: 2, nombre: "Valparaíso", lat: -33.05, lon: -71.62 },
+      { id: 3, nombre: "Concepción", lat: -36.82, lon: -73.05 },
+      { id: 4, nombre: "La Serena", lat: -29.90, lon: -71.25 },
+      { id: 5, nombre: "Puerto Montt", lat: -41.47, lon: -72.94 }
     ];
   }
 
