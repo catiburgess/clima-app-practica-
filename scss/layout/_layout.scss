@@ -1,0 +1,20 @@
+.weather-app {
+  font-family: $font-base;
+  background-color: $bg-color;
+  min-height: 100vh;
+
+  &__header {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__content {
+    padding-bottom: $spacing-lg;
+  }
+
+  &__footer {
+    background-color: $secondary-color;
+    color: white;
+    text-align: center;
+    padding: $spacing-md;
+  }
+}

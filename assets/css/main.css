@@ -1,0 +1,38 @@
+.weather-app {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+.weather-app__header {
+  margin-bottom: 2rem;
+}
+.weather-app__content {
+  padding-bottom: 2rem;
+}
+.weather-app__footer {
+  background-color: #6c757d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.place-card {
+  transition: transform 0.2s;
+}
+.place-card:hover {
+  transform: scale(1.03);
+}
+.place-card__name {
+  font-weight: bold;
+}
+.place-card__temp {
+  font-size: 1.2rem;
+}
+.place-card--sunny {
+  border: 2px solid #ffc107;
+}
+.place-card--rainy {
+  border: 2px solid #0dcaf0;
+}
+
+/*# sourceMappingURL=main.css.map */
