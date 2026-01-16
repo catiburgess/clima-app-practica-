@@ -1,27 +1,28 @@
-# App de Clima – Módulo 4
+# App de Clima – Módulo 5
 
-Aplicación de clima enfocada en la lógica JavaScript y el manejo de datos.
+Aplicación de clima desarrollada con Programación Orientada a Objetos y consumo de API externa.
 
-## Modelo de datos
-Los datos se modelan en un arreglo de objetos `lugares`, donde cada lugar contiene:
-- id
-- nombre
-- temperatura actual
-- estado actual
-- pronóstico semanal (día, min, max, estado)
+## Estructura
+La lógica principal se organiza en clases:
+- WeatherApi: maneja el consumo de la API de clima.
+- WeatherApp: gestiona lugares, estadísticas, alertas y actualización del DOM.
 
-## Estadísticas calculadas
-La aplicación calcula dinámicamente:
-- Temperatura mínima semanal
-- Temperatura máxima semanal
-- Temperatura promedio
-- Cantidad de días soleados y lluviosos
-- Resumen textual de la semana
+## API utilizada
+Open-Meteo  
+https://open-meteo.com/
+
+## Funcionalidades
+- Clima actual desde API
+- Pronóstico semanal
+- Estadísticas (mín, máx, promedio)
+- Alertas de clima simples
+- Manejo de errores y carga
 
 ## Tecnologías
 - HTML5
 - Bootstrap
 - SASS
-- JavaScript
+- JavaScript ES6+
+- Fetch API
 
 Repositorio: https://github.com/catiburgess/clima-app-practica-.git
