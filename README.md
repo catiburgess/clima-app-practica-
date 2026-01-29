@@ -11,6 +11,7 @@ Los datos del clima se gestionan desde un archivo de datos y se renderizan diná
 mediante directivas propias de Vue.
 
 ## Estructura del proyecto
+
 src/
 ├─ main.js
 ├─ App.vue
