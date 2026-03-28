@@ -2,6 +2,10 @@
   <div class="container">
     <h1>Clima por Localidad</h1>
 
+    <p v-if="autenticado" class="welcome-msg">
+      Bienvenida/o {{ usuario.nombre }} 👋
+    </p>
+
     <input
       v-model="busqueda"
       placeholder="Buscar ciudad"
@@ -15,6 +19,7 @@
       >
         <h3>{{ lugar.nombre }}</h3>
         <p class="temp">{{ lugar.tempActual }} °C</p>
+        <p>{{ lugar.estado }}</p>
 
         <router-link :to="`/lugar/${lugar.id}`">
           Ver detalle →
@@ -36,9 +41,15 @@ export default {
   },
   computed: {
     lugaresFiltrados() {
-      return this.lugares.filter(l =>
+      return this.lugares.filter((l) =>
         l.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
       );
+    },
+    usuario() {
+      return this.$store.getters.usuarioActual;
+    },
+    autenticado() {
+      return this.$store.getters.autenticado;
     }
   }
 };

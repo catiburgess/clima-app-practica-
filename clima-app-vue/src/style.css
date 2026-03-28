@@ -1,4 +1,3 @@
-/* ===== RESET / BASE ===== */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: linear-gradient(180deg, #eef2ff, #f8fafc);
@@ -7,7 +6,67 @@ body {
   color: #111827;
 }
 
-/* ===== CONTENEDOR ===== */
+.topbar {
+  background: #1e3a8a;
+  color: white;
+  padding: 14px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.topbar__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+}
+
+.brand:hover {
+  text-decoration: none;
+  transform: none;
+  background: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a,
+.nav-links button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  background: #1d4ed8;
+}
+
+.user-info {
+  font-weight: 600;
+  color: #dbeafe;
+}
+
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -17,7 +76,6 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* ===== TITULOS ===== */
 h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -28,15 +86,15 @@ h2, h3 {
   color: #1f2937;
 }
 
-/* ===== INPUT ===== */
 input {
   width: 100%;
   padding: 12px 14px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #c7d2fe;
   font-size: 1rem;
   background: #f8fafc;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -45,7 +103,6 @@ input:focus {
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
-/* ===== LINKS / BOTONES ===== */
 a {
   display: inline-block;
   margin-top: 10px;
@@ -63,7 +120,19 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* ===== HOME: CARDS ===== */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -97,7 +166,6 @@ a:hover {
   margin-bottom: 12px;
 }
 
-/* ===== DETALLE ===== */
 .detalle-actual {
   padding: 16px;
   border-radius: 12px;
@@ -110,7 +178,6 @@ a:hover {
   font-weight: 500;
 }
 
-/* ===== PRONOSTICO ===== */
 .pronostico {
   list-style: none;
   padding: 0;
@@ -125,4 +192,31 @@ a:hover {
   background: #f8fafc;
   margin-bottom: 10px;
   border: 1px solid #e5e7eb;
+}
+
+.auth-box {
+  max-width: 500px;
+}
+
+.error-msg {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.demo-box {
+  margin-top: 20px;
+  padding: 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+}
+
+.welcome-msg {
+  text-align: center;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 18px;
 }

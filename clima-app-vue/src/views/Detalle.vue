@@ -27,7 +27,7 @@ export default {
   props: ["id"],
   computed: {
     lugar() {
-      return lugares.find(l => l.id === Number(this.id));
+      return lugares.find((l) => l.id === Number(this.id));
     }
   }
 };
