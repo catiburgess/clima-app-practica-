@@ -1,60 +1,91 @@
-# App de Clima – Módulo 6
+# 🌤️ Clima App — Módulo 7
 
-Aplicación de clima desarrollada como una **Single Page Application (SPA)** utilizando **Vue.js**.
-Este módulo tiene como objetivo aplicar el uso de componentes, enrutamiento y reactividad
-para mostrar información climática de distintas localidades.
+Aplicación de clima desarrollada en Vue.js, con autenticación de usuarios, manejo de estado global y rutas protegidas.
 
-## Descripción general
-La aplicación permite visualizar un listado de localidades y acceder al detalle de cada una
-sin recargar la página, haciendo uso de Vue Router.  
-Los datos del clima se gestionan desde un archivo de datos y se renderizan dinámicamente
-mediante directivas propias de Vue.
+## 🚀 Funcionalidades principales
 
-## Estructura del proyecto
+- **Autenticación de usuarios:**  
+    - Formulario de login con validación de credenciales.
+    - Mensaje de error si las credenciales son incorrectas.
+    - Redirección automática tras inicio de sesión exitoso.
 
-src/
-├─ main.js
-├─ App.vue
-├─ router/
-│ └─ index.js
-├─ views/
-│ ├─ Home.vue
-│ └─ Detalle.vue
-└─ data/
-└─ lugares.js
+- **Usuarios de prueba:**
+    - **Usuario 1:**  
+        - Email: `camila@clima.com`  
+        - Contraseña: `1234`
+    - **Usuario 2:**  
+        - Email: `martin@clima.com`  
+        - Contraseña: `1234`
 
-- **Home.vue**: vista principal con el listado de localidades.
-- **Detalle.vue**: vista de detalle con información climática por localidad.
-- **router/index.js**: configuración de rutas para la navegación SPA.
-- **lugares.js**: archivo con los datos de las localidades.
+- **Estado global con Vuex:**  
+    - Manejo de usuario actual, sesión, favoritos y preferencias.
+    - Acciones: login y logout.
 
-## Funcionalidades principales
-- Navegación SPA sin recarga de página.
-- Listado dinámico de localidades.
-- Vista de detalle por localidad.
-- Uso de directivas Vue:
-  - `v-for`
-  - `v-if`
-  - `v-model`
-- Interacción con el usuario mediante búsqueda de localidades.
+- **Rutas implementadas:**
+    - `/` — Página principal del clima
+    - `/login` — Inicio de sesión
+    - `/lugar/:id` — Detalle del clima
+    - `/favoritos` — Lugares favoritos (🔒 protegida, requiere login)
 
-## Tecnologías utilizadas
-- Vue.js 3
+- **Personalización por usuario:**  
+    - Nombre en el header, favoritos y preferencias personalizadas tras login.
+
+## 🛠️ Tecnologías utilizadas
+
+- Vue 3
 - Vue Router
-- JavaScript ES6+
-- HTML5
-- CSS / Bootstrap
+- Vuex
+- JavaScript
+- CSS
 - Vite
 
-## Ejecución del proyecto
-1. Instalar dependencias:
-   ```bash
-   npm install
-Ejecutar servidor de desarrollo:
+## 📁 Estructura del proyecto
 
-npm run dev
-Abrir la aplicación en el navegador usando la URL indicada por Vite.
+```
+src/
+ ├── App.vue
+ ├── main.js
+ ├── style.css
+ ├── router/
+ │   └── index.js
+ ├── store/
+ │   └── index.js
+ ├── data/
+ │   ├── lugares.js
+ │   └── usuarios.js
+ └── views/
+         ├── Home.vue
+         ├── Detalle.vue
+         ├── Login.vue
+         └── Favoritos.vue
+```
 
-Repositorio
-https://github.com/catiburgess/clima-app-practica-.git
+## ⚙️ Instalación y ejecución
 
+1. Instala las dependencias:
+     ```
+     npm install
+     ```
+2. Ejecuta el proyecto:
+     ```
+     npm run dev
+     ```
+3. Abre en tu navegador:  
+     [http://localhost:5173](http://localhost:5173)
+
+## 📌 Repositorio
+
+[Repositorio en GitHub](https://github.com/catiburgess/clima-app-practica-.git)
+
+## 👨‍💻 Autor
+
+Proyecto desarrollado para el Módulo 7 — App de Clima  
+Bootcamp Desarrollo Frontend Vue.js
+
+## ✅ Estado del proyecto
+
+- [✅] Login funcional
+- [✅] Vuex implementado
+- [✅] Rutas protegidas
+- [✅] SPA con Vue Router
+- [✅] Personalización por usuario
